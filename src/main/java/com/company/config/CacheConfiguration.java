@@ -41,6 +41,9 @@ public class CacheConfiguration {
             createCache(cm, com.company.repository.UserRepository.USERS_BY_LOGIN_CACHE);
             createCache(cm, com.company.repository.UserRepository.USERS_BY_EMAIL_CACHE);
             createCache(cm, com.company.domain.Authority.class.getName());
+            createCache(cm, com.company.domain.Car.class.getName());
+            createCache(cm, com.company.domain.Owner.class.getName());
+            createCache(cm, com.company.domain.Owner.class.getName() + ".cars");
             // jhipster-needle-ehcache-add-entry
         };
     }
